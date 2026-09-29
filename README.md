@@ -32,9 +32,11 @@ Overview of steps:
 ---
 
 ### 1) Opening and separating outer case of battery pack
-![torx screw photo](images/torx.jpg)
-
 **Warning:** Make sure the battery is fully discharged to reduce the danger of short-circuits and thermal runaway.
+
+![torx screw photo](torx.jpg)
+
+
    
 The outer case has special screws with a gear-shaped hole and a little pin in the middle (Security Torx). First, you need to remove all 4 Torx screws.
 You need to be careful in this step because the BMS board is screwed to the outer case from the inside. You need to pry the side clips of the outer case with a thin tool, then the outer case opens. 
@@ -50,21 +52,21 @@ The 14-sandwich battery is designed as 7S2P, and the BMS board is manufactured t
 After cutting all the wires and separating the plastic board glued to the battery pack, you need to pull out a thermal sensor that is placed between the batteries.
 There will also be a fuse glued to the batteries that pops at 99°C, securing the system on BMS failure. 
 Fuse in question:
-![fuse photo](images/fuse.jpg)
+![fuse photo](fuse.jpg)
 
 ### 3) Connecting BMS and new battery pack together
 **Warning:** The BMS might drop the output voltage to ~5V (with the battery level indicator still on) or completely cut power for both output and the LED indicator during short-circuits or arcs. It unlocks instantly after you connect it to the original charger. 
 
 Because monitoring 2 parallel batteries independently is not really necessary and makes no sense when your new battery pack is different than the original 2-parallel setup, you can just solder balance cables with the same color together.
-![balance board](images/balance_board.jpg)
+![balance board](balance_board.jpg)
 
 As you can see, the 16 balance wires are already arranged in groups of eight. The colors are not random. For example, both green cables are measuring 3.6V (1S), and brown ones are 14.4V (4S). This includes the main balance cables.
 You should also solder the 2 main red cables and 2 main black cables together for the same reason.
-![arranged balance cables](images/BMS_back_balance_cables.jpg)
+![arranged balance cables](BMS_back_balance_cables.jpg)
 
-The colors might be different for your BMS model. There are balance cables named on the back side of the BMS, TP1 to TP16. TP1 and TP2 are going to get soldered together in our architecture because TP1 is the main (-) balance for parallel one, and TP2 is the main (-) balance cable for parallel two. TP3-TP4 is 1S, TP5-TP6 is 2S, etc.
+The colors might be different for your BMS model. There are balance cables named on the back side of the BMS, TP1 to TP16. TP1 and TP2 are going to get soldered together in our architecture because TP1 is the main (-) balance for parallel one, and TP2 is the main (-) balance cable for parallel two. TP3-TP4 is 1S, TP5-TP6 is 2S, etc. so you should solder each couples together.
 
-After soldering, you get 8 balance cables and 2 main cables like a normal 7S BMS has. So after that, it's just normal BMS connecting: TP1-TP2 cable is (B0), TP2-TP3 is (B1) etc.
+After soldering, you get 8 balance cables and 2 main cables like a normal 7S BMS has. So after that, it's just normal BMS connecting: TP1-TP2 cable is (B0), TP2-TP3 cable is (B1) etc.
 You should also embed the thermal sensor and thermal fuse inside the new batteries for thermal security.
 
 ### 4) Securing to avoid short-circuits and closing
@@ -77,6 +79,6 @@ Screw the BMS in place, secure the plastic between the BMS and the battery pack,
 Place the BMS output adapter (black plastic part) back in place, and close the outer case.
 
 Before closing the outer case:
-![last pack](images/last_pack.jpg)
-
+![last pack](last_pack.jpg)
+(I added two-sided tape to top of the pack to hold onto other part of outer case)
 After screwing the 4 Torx screws back (watch out, make sure no cables are pinched under the screws) and making sure nothing rattles inside, your upgraded battery pack is ready.
