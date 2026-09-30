@@ -21,7 +21,7 @@ Tools and materials I used:
 * Special torx screwdriver
 * Phillips screwdriver
 
-*(I didn't have a spot welder, so I attached the copper strips using solder, taking care not to heat up the batteries.)*
+*(I didn't have a spot welder, so I attached the copper strips by soldering them, taking care not to overheat the batteries; however, i dont recommend this.)*
 
 Overview of steps:
 1) Opening and separating the outer case of the battery pack
@@ -55,7 +55,7 @@ Fuse in question:
 ![fuse photo](fuse.jpg)
 
 ### 3) Connecting BMS and new battery pack together
-**Warning:** The BMS might drop the output voltage to ~5V (with the battery level indicator still on) or completely cut power for both output and the LED indicator during short-circuits or arcs. It unlocks instantly after you connect it to the original charger. 
+**Warning:** The BMS might drop the output voltage to ~5V (with the battery level indicator still on) or completely cut power for both output and the LED indicator during short-circuits or arcs. It unlocks instantly after you connect it to the original charger. If that doesn't work, there might still be a short circuit or a blown fuse.
 
 Because monitoring 2 parallel batteries independently is not really necessary and makes no sense when your new battery pack is different than the original 2-parallel setup, you can just solder balance cables with the same color together.
 ![balance board](balance_board.jpg)
