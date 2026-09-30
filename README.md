@@ -32,7 +32,7 @@ Overview of steps:
 ---
 
 ### 1) Opening and separating outer case of battery pack
-**Warning:** Make sure the battery is fully discharged to reduce the danger of short-circuits and thermal runaway.
+**Warning:** Make sure the battery is not fully charged to reduce the danger of short-circuits and thermal runaway.
 
 ![torx screw photo](torx.jpg)
 
@@ -66,7 +66,7 @@ You should also solder the 2 main red cables and 2 main black cables together fo
 
 The colors might be different for your BMS model. There are balance cables named on the back side of the BMS, TP1 to TP16. TP1 and TP2 are going to get soldered together in our architecture because TP1 is the main (-) balance for parallel one, and TP2 is the main (-) balance cable for parallel two. TP3-TP4 is 1S, TP5-TP6 is 2S, etc. so you should solder each couples together.
 
-After soldering, you get 8 balance cables and 2 main cables like a normal 7S BMS has. So after that, it's just normal BMS connecting: TP1-TP2 cable is (B0), TP2-TP3 cable is (B1) etc.
+After soldering, you get 8 balance cables and 2 main cables like a normal 7S BMS has. So after that, it's just normal BMS connecting: TP1-TP2 cable pair is (B0), TP3-TP4 cable pair is (B1), and so on.
 You should also embed the thermal sensor and thermal fuse inside the new batteries for thermal security.
 
 ### 4) Securing to avoid short-circuits and closing
