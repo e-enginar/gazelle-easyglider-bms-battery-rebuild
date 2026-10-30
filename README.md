@@ -82,3 +82,6 @@ Before closing the outer case:
 ![last pack](last_pack.jpg)
 (I added two-sided tape to top of the pack to hold onto other part of outer case)
 After screwing the 4 Torx screws back (watch out, make sure no cables are pinched under the screws) and making sure nothing rattles inside, your upgraded battery pack is ready.
+
+*UPDATE*
+I’ve been using it for a while now, and there are no issues at all. The original charger charges it up to ~28.6V(4.09V). During use, the bike cuts off power when the voltage drops to around 23.0V(3.29V). The only minor drawback is that the charge indicator on the battery itself seems to operates based on a coulomb counter. Even before half the battery has drained, it starts flashing the final red led, and it continues to do so until the battery is truly empty. However, this is purely a cosmetic issue. You can tell when the battery is truly nearing depletion because the red light on the bike’s handlebar begins to flash.
