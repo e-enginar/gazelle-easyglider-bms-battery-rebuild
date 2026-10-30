@@ -1,6 +1,6 @@
 # Gazelle Easy Glider Custom Battery & BMS Rebuild Guide
-
-This repository contains technical documentation and wiring insights for the **Gazelle Easy Glider (26V 250W Panasonic Mid-Drive)** e-bike battery rebuilding process. Since there is minimal technical documentation online for this specific model, this guide serves as a resource for engineers and DIY enthusiasts. 
+This guide covers rebuilding an almost dead Gazelle Easy Glider e-bike battery (Panasonic 26V mid-drive), reusing the original BMS with a 7S3P 21700 pack.
+Since there is minimal technical documentation online for this specific model, this guide serves as a resource for engineers and DIY enthusiasts. 
 
 ## 1. Project Overview, Reasons and Tools
 These Gazelle models were manufactured between 2005-2009. That means the old battery was 17-21 years old when I did this project in 2026.
